@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="av_margin">64dp</dimen>
+    <dimen name="ah_margin">32dp</dimen>
+    <dimen name="text_size"> 10sp</dimen>
+</resources>

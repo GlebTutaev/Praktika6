@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hello_autumn"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/ah_margin"
+    android:paddingBottom="@dimen/av_margin"
+    android:paddingRight="@dimen/ah_margin"
+    android:paddingTop="@dimen/av_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:src="@drawable/a"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="1/5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="32dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lastimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:textSize="@dimen/text_size"
+            android:layout_weight="1"
+            android:text="Предыдущий"
+            />
+
+        <Button
+            android:id="@+id/nextimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="@dimen/text_size"
+            android:text="Следущий" />
+    </LinearLayout>
+
+</LinearLayout>
